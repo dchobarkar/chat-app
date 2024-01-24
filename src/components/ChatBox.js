@@ -6,9 +6,11 @@ import {
   onSnapshot,
   limit,
 } from "firebase/firestore";
-import { db } from "../firebase";
+
 import Message from "./Message";
 import SendMessage from "./SendMessage";
+
+import { db } from "../firebase";
 
 const ChatBox = () => {
   const [messages, setMessages] = useState([]);
